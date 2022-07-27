@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>
+        Web Framework project
+    </title>
+</head>
+<body>
+    <h1>Choose from anyone of the radio buttons</h1>
+    <form action="/performCRUD_on_DatabaseSelected" method="POST">
+
+        <select id="operation" name="operation">
+          <option value="mySql">mySql</option>
+          <option value="MongoDB">MongoDB</option>
+          <option value="Cassandra">Cassandra</option>
+        </select>
+
+        <label for="Task">Select Task</label><br>
+        <select id="Task" name="Task">
+              <option value="createTable">Create a table</option>
+              <option value="insertOneData">Insert one data into table</option>
+              <option value="updateTable">Update into table</option>
+              <option value="bulkInsert">Bulk insertion into table</option>
+              <option value="deleteFromTable">Delete from table</option>
+              <option value="downloadData">Download data from table</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
